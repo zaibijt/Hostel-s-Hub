@@ -1,0 +1,252 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 3rem 0 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.938rem;
+  font-weight: 500;
+  background-color: #FBF9F9;
+  color: #524748;
+  line-height: 1.6;
+}
+
+h1,h2,h3,ul,p{
+  margin: 0;
+}
+
+h2,h3{
+  font-weight: 600;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*===== SECTION =====*/
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #3E0E12;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/*===== LAYOUT =====*/
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #000;
+}
+
+/*===== FOOTER =====*/
+.footer {
+  background-color: black;
+  color: #FBF9F9;
+  text-align: center;
+}
+
+.footer__container {
+  padding: 3rem 0;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.footer__description {
+  margin-bottom: 1.5rem;
+}
+
+.footer__social {
+  margin-bottom: 3rem;
+}
+
+.footer__link {
+  font-size: 1.4rem;
+  color: #FBF9F9;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  color: #7B6F71;
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: #7B6F71;
+}
+
+/*===== MEDIA QUERIES =====*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.813rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .footer__title {
+    font-size: 2.25rem;
+  }
+
+  .footer__copy {
+    font-size: 0.813rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.img-box {
+    width: 100%; 
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:  10px solid red; */
+  }
+  
+  .img1 {
+    padding-top: 60%; /* establishes the height, keeping the proportion of the container, regardless of the width value in px */
+    background-color: orange; /* backup color to fill up the container - shows before the img is fully loaded or in case the image doesnt load */
+    background-image: url(https://images.pexels.com/photos/1148955/pexels-photo-1148955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20%;
+    /* transition for the image to zoom in smoothly: */
+    transition: all 1s ease;
+  }
+
+  .img2 {
+    padding-top: 60%; /* establishes the height, keeping the proportion of the container, regardless of the width value in px */
+    background-color: orange; /* backup color to fill up the container - shows before the img is fully loaded or in case the image doesnt load */
+    background-image: url(https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20%;
+    /* transition for the image to zoom in smoothly: */
+    transition: all 1s ease;
+  }
+
+  .img3 {
+    padding-top: 60%; /* establishes the height, keeping the proportion of the container, regardless of the width value in px */
+    background-color: orange; /* backup color to fill up the container - shows before the img is fully loaded or in case the image doesnt load */
+    background-image: url(https://images.pexels.com/photos/1125130/pexels-photo-1125130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20%;
+    /* transition for the image to zoom in smoothly: */
+    transition: all 1s ease;
+  }
+  .img4 {
+    padding-top: 60%; /* establishes the height, keeping the proportion of the container, regardless of the width value in px */
+    background-color: orange; /* backup color to fill up the container - shows before the img is fully loaded or in case the image doesnt load */
+    background-image: url(https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20%;
+    /* transition for the image to zoom in smoothly: */
+    transition: all 1s ease;
+  }
+
+  .img5 {
+    padding-top: 60%; /* establishes the height, keeping the proportion of the container, regardless of the width value in px */
+    background-color: orange; /* backup color to fill up the container - shows before the img is fully loaded or in case the image doesnt load */
+    background-image: url(https://images.pexels.com/photos/1517145/pexels-photo-1517145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20%;
+    /* transition for the image to zoom in smoothly: */
+    transition: all 1s ease;
+  }
+  
+  .img1:hover {
+    /* img zoom in on hover (x, y): */
+    transform: scale(1.1, 1.1);
+  }
+  .img2:hover {
+    /* img zoom in on hover (x, y): */
+    transform: scale(1.1, 1.1);
+  }
+  .img3:hover {
+    /* img zoom in on hover (x, y): */
+    transform: scale(1.1, 1.1);
+  }
+  .img4:hover {
+    /* img zoom in on hover (x, y): */
+    transform: scale(1.1, 1.1);
+  }
+  .img5:hover {
+    /* img zoom in on hover (x, y): */
+    transform: scale(1.1, 1.1);
+  }
+  
